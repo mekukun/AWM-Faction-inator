@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const config = require("./config.json");
+// const config = require("./config.json");
 const intents = new Discord.Intents(32767);
 const client = new Discord.Client({ intents });
 
@@ -137,4 +137,4 @@ client.on('messageReactionAdd', async (reaction, user) =>
  });
   
 
-client.login(config.token);
+client.login(process.env.AWMFI_TOKEN);
