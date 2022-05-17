@@ -79,7 +79,7 @@ client.on('messageReactionAdd', async (reaction, user) =>
     
       if(reaction.emoji.id === '697339713543208960') 
     { 
-         if(reaction.message.channel.id === '756794488772624414')  
+         if(reaction.message.channelId === '756794488772624414')  
         { 
          console.log('Right Channel + Right Emoji');
          let haveklee = reaction.message.guild.members.cache.get(user.id).roles.cache.has('756829955702128660');
